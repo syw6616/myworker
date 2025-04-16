@@ -28,10 +28,10 @@ jobs:
         run: |
           npm install -g javascript-obfuscator
 
-      - name: 下载 BPB worker.js
-        run: |
-          wget -O origin.js https://raw.githubusercontent.com/bia-pain-bache/BPB-Worker-Panel/main/build/unobfuscated-worker.js
-
+#      - name: 下载 BPB worker.js
+ #       run: |
+  #        wget -O origin.js https://raw.githubusercontent.com/bia-pain-bache/BPB-Worker-Panel/main/build/unobfuscated-worker.js
+#
       - name: 混淆 BPB worker.js
         run: |
           javascript-obfuscator origin.js --output _worker.js \
